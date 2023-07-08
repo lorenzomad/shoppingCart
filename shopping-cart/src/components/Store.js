@@ -4,7 +4,7 @@ import NavigationBar from "./NavigationBar";
 const Store = () => {
     return (
         <div className="store">
-            <NavigationBar />
+            <NavigationBar inStore={true} />
             <h1>Store page</h1>
         </div>
     )

@@ -9,7 +9,7 @@ function Homepage() {
 
   return (
     <div className="homepage">
-      <NavigationBar />
+      <NavigationBar inStore={false} />
       <h1>Home Page</h1>
       <ImageCard content="https://cdn-icons-png.flaticon.com/512/825/825575.png" altText="Buy items"/>
       <TextBlock text={hometext} />
