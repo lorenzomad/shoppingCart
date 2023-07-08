@@ -1,9 +1,12 @@
 import React from "react";
 
-const ImageCard = ({content, altText}) => {
+const ImageCard = ({content, altText, size}) => {
     return (
         <div className="card">
-            <img src={content} alt={altText}></img>
+            <img 
+            src={content} 
+            alt={altText}
+            style= {{size}} />            
         </div>
     )
 }
