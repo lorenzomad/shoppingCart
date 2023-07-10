@@ -15,15 +15,17 @@ const NavigationBar = ({inStore, cart = []}) => {
 
     return (
         <nav className="navigation">
-            <h1> BuyYourThing! </h1>
-            <Link to="/"> Home </Link>    
-            <Link to="/store"> Store </Link>
-            {inStore ? (
-                <div>
-                    <h1>${ totalCost} </h1>
-                    <button>Buy</button>
-                </div>
-            ) : <></>}
+            <h1 className="logo"> BuyYourThing! </h1>
+            <ul>
+                <li><Link to="/"> Home </Link></li>    
+                <li><Link to="/store"> Store </Link></li>
+                {inStore ? (
+                    <li><div>
+                        <h1>${ totalCost} </h1>
+                        <button>Buy</button>
+                    </div></li>
+                ) : <></>}
+            </ul>
         </nav>
     )
 }
